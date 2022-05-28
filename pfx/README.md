@@ -8,7 +8,7 @@
 3. 时间戳: 寻找可用的时间戳服务器: http://timestamp.comodoca.com/authenticode
 4. 签名: 执行如下语句
 ``` bash
-"C:\Program Files (x86)\Windows Kits\10\App Certification Kit\signtool.exe" /fd sha256 /f "C:\Program Files\OpenSSL-Win64\bin\cert\okjx.pfx" /p 1234  /t http://timestamp.comodoca.com/authenticode /v "C:\Program Files (x86)\okjx\okjx.exe"
+signtool.exe sign /fd sha256 /f "C:\Program Files\OpenSSL-Win64\bin\cert\okjx.pfx" /p 1234  /t http://timestamp.comodoca.com/authenticode /v "C:\Users\Administrator\Downloads\Output\okjx.exe"
 
 
 # 输出
